@@ -6,7 +6,7 @@ let question = "Who was the first American woman in space? "
 let correctAnswer = "Sally Ride"
 let candidateAnswer;
 
-let questions = ["Who was the first America woman in space?\n ",
+let questions = ["Who was the first American woman in space? ",
                 "True or false: 5 kilometer == 5000 meter?\n ",
                 "(5+3)/2 * 10?\n ",
                 "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?\n ",
