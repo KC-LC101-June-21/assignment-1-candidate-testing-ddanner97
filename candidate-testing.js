@@ -44,7 +44,7 @@ function gradeQuiz(candidateAnswers) {
 
   let grade = (correctCount / 5) * 100;
   
-  return [grade, correctCount];
+  return grade;
 }
 
 function runProgram() {
@@ -57,7 +57,7 @@ function runProgram() {
 
   //Grade quiz
   let grade = gradeQuiz(candidateAnswers)
-  console.log(">>> Overall Grade: " + grade[0] + "% (" + grade[1] + " of 5 responses correct) <<<")
+  console.log(">>> Overall Grade: " + grade + "% (" + ((grade/100)*5) + " of 5 responses correct) <<<")
 
   if (grade[0] < 60){
     console.log(">>> Status: FAILED <<<\n")
