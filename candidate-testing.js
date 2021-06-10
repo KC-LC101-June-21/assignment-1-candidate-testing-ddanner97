@@ -1,6 +1,6 @@
 const input = require('readline-sync');
 
-let candidateName
+let candidateName = ""
 
 let question = "Who was the first American woman in space? "
 let correctAnswer = "Sally Ride"
@@ -50,7 +50,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   // Get name and Greet
   candidateName = askForName();
-  console.log("Hello," + candidateName + "\n")
+  console.log("Hello, " + candidateName + "\n")
   
   //Ask question
   askQuestion();
