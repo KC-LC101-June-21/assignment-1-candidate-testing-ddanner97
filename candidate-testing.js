@@ -57,9 +57,9 @@ function runProgram() {
 
   //Grade quiz
   let grade = gradeQuiz(candidateAnswers)
-  console.log(">>> Overall Grade: " + grade + "% (" + ((grade/100)*5) + " of 5 responses correct) <<<")
+  console.log(`>>> Overall Grade: ${grade}% ${(grade/100)*5} of 5 responses correct) <<<`)
 
-  if (grade[0] < 60){
+  if (grade[0] < 80){
     console.log(">>> Status: FAILED <<<\n")
   } else {
     console.log(">>> Status: PASSED <<<\n")
